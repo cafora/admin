@@ -85,7 +85,7 @@ const ProductEditModal: React.FC<EditModalProps> = ({ handleCloseEditModal, show
                                 <Form.Label>Product Image</Form.Label>
                                 <Form.Control name='images' type="file" onChange={handleFileChange} />
                                 <img
-                                    src={`http://localhost:4000${productToEdit?.images}`}
+                                    src={`https://server-blpu.onrender.com${productToEdit?.images}`}
                                     alt="Product"
                                     style={{
                                         width: "100px",
