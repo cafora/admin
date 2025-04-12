@@ -30,7 +30,7 @@ const AdminLoginPage: React.FC = () => {
 
         const response = await axios({
             method: "post",
-            url: `http://localhost:4000/admin/login`,
+            url: `https://server-blpu.onrender.com/admin/login`,
             data: data,
             headers: {
                 "Content-type": "application/json"
