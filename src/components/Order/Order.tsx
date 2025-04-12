@@ -17,7 +17,7 @@ const Order: React.FC = () => {
 
     const fetchOrderData = async (page: number, limit: number) => {
         try {
-            const response = await axios.get('http://localhost:4000/admin/get-order', {
+            const response = await axios.get('https://server-blpu.onrender.com/admin/get-order', {
                 headers: {
                     Authorization: `Bearer ${adminAuthToken}`,
                     'Content-type': 'application/json',
