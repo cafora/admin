@@ -16,7 +16,7 @@ const ProductDeleteModal: React.FC<DeleteModalProps> = ({ handleCloseDeleteModal
     const deleteNote = async (selectedNote: string) => {
         if (adminAuthToken) {
             const response = await axios.delete(
-                `http://localhost:4000/admin/delete-product/${selectedNote}`,
+                `https://server-blpu.onrender.com/admin/delete-product/${selectedNote}`,
                 {
                     headers: {
                         'Authorization': `Bearer ${adminAuthToken}`,
