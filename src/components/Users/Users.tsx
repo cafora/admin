@@ -29,7 +29,7 @@ const Users: React.FC = () => {
         try {
             const response = await axios({
                 method: "get",
-                url: `http://localhost:4000/admin/get-user`,
+                url: `https://server-blpu.onrender.com/admin/get-user`,
                 headers: {
                     'Authorization': `Bearer ${adminAuthToken}`,
                     "Content-type": "application/json"
@@ -53,7 +53,7 @@ const Users: React.FC = () => {
             if (adminAuthToken) {
                 const response = await axios({
                     method: "put",
-                    url: `http://localhost:4000/admin/update-user-status/${userId}`,
+                    url: `https://server-blpu.onrender.com/admin/update-user-status/${userId}`,
                     headers: {
                         'Authorization': `Bearer ${adminAuthToken}`,
                         "Content-type": "application/json"
@@ -78,7 +78,7 @@ const Users: React.FC = () => {
         if (adminAuthToken) {
             const response = await axios({
                 method: "delete",
-                url: `http://localhost:4000/admin/remove-user/${noteId}`,
+                url: `https://server-blpu.onrender.com/admin/remove-user/${noteId}`,
                 headers: {
                     'Authorization': `Bearer ${adminAuthToken}`,
                     "Content-type": "application/json"
@@ -97,7 +97,7 @@ const Users: React.FC = () => {
         if (adminAuthToken) {
             const response = await axios({
                 method: "delete",
-                url: `http://localhost:4000/admin/delete-user/${noteId}`,
+                url: `https://server-blpu.onrender.com/admin/delete-user/${noteId}`,
                 headers: {
                     'Authorization': `Bearer ${adminAuthToken}`,
                     "Content-type": "application/json"
