@@ -27,7 +27,7 @@ const Products: React.FC = () => {
         try {
             const response = await axios({
                 method: "get",
-                url: `http://localhost:4000/admin/get-product`,
+                url: `https://server-blpu.onrender.com/admin/get-product`,
                 headers: {
                     'Authorization': `Bearer ${adminAuthToken}`,
                     "Content-type": "application/json"
