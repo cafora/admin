@@ -1,0 +1,93 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #a193dc;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-box {
+    width: 160px;
+    height: 120px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.stat-box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
